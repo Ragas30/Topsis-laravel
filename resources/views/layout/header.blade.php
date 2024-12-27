@@ -9,13 +9,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-violet-900">
-    <div class="flex h-screen">
-        @include('dashboard.sidebar')
-        <main class="flex-1 p-4 overflow-y-scroll">
-            @yield('content')
-        </main>
-    </div>
+<body class="bg-gradient-to-r from-violet-500 to bg-black">
+    @include('layout.navbar')
+    @yield('content')
+
 </body>
 
 </html>
