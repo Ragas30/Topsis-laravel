@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gradient-to-r from-violet-500 to bg-black">
+<body class="">
     @include('layout.navbar')
     @yield('content')
 

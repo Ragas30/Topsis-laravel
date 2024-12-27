@@ -36,6 +36,9 @@
             <div class="text-white text-center mt-4">
                 Don't have an account? <a href="/register" class="text-[#FF2D20]">Register</a>
             </div>
+            <div class="text-center">
+                <a href="{{ route('home') }}" class="text-orange-700 hover:underline">Back To Home</a>
+            </div>
         </div>
 
 

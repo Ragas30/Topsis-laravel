@@ -2,26 +2,54 @@
 @section('title', 'Home')
 @section('content')
 
-    <main class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-500 to-violet-900">
+
+    <main
+        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-500 to-violet-900 px-4 md:px-10 lg:px-20 xl:px-40">
+
         <div class="grid grid-cols-1 justify-start md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 p-4 md:p-0">
             <div class="flex flex-col items-start justify-center text-white">
-                <h1 class="text-6xl font-bold">Welcome to Topsis</h1>
-                <h2 class="text-4xl font-bold">Sistem Pendukung Keputusan</h2>
-                <p class="mt-2 md:mt-6">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, architecto!
-                    Quos
-                    voluptatum autem, tempora harum repellendus delectus magnam, veniam commodi vel assumenda, doloribus
-                    unde
-                    ad.
+                <h1 class="text-4xl font-bold md:text-8xl lg:text-10xl">Welcome to Topsis</h1>
+                <h2 class="text-2xl font-bold md:text-6xl lg:text-8xl">Sistem Pendukung Keputusan</h2>
+                <p class="mt-2 md:mt-6 lg:mt-12">
+
+                    Sistem Penunjang Keputusan (Topsis) adalah sebuah sistem yang digunakan untuk membantu
+                    pengambilan keputusan dalam memilih alternatif terbaik. <br class="">
+                    <hr class="w-full">
+                    untuk detail lebih lanjut silahkan klik tombol di bawah
                 </p>
                 <a href="{{ route('login') }}"
-                    class="mt-6 md:mt-12 px-6 py-2 rounded-md bg-white text-black hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
-                    Login
+                    class="mt-2 md:mt-12 px-6 py-2 rounded-md bg-white text-black hover:bg-violet-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
+                    Baca Selengkapnya
                 </a>
             </div>
-            <div class="hidden md:flex items-center justify-center">
-                <img src="{{ asset('img/logo.png') }}" alt="asu" class="w-1/2 md:w-3/4 lg:w-1/2">
+            <div class=" md:flex items-center justify-center">
+                <div id="background"
+                    class="animate-bounce bg-white w-1/2 md:w-3/4 lg:w-1/2 h-1/2 md:h-3/4 lg:h-1/2 rounded-full">
+                    {{-- <img src="https://ragas30.github.io/foto/ragas.jpeg" alt="" class="w-full h-full object-cover rounded-full"> --}}
+                </div>
+
             </div>
     </main>
+
+    <div
+        class="px-36 bg-gradient-to-l from-violet-500 to-violet-900 grid grid-cols-3 justify-start md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 p-4 md:p-0">
+        <div class="flex flex-col items-start justify-center text-white">
+            <img src="" alt="" class="">
+            <h1>Test</h1>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const background = document.getElementById('background');
+
+            background.addEventListener('mouseenter', function() {
+                background.classList.add('animate-bounce');
+
+            });
+        });
+    </script>
 
 @endsection
