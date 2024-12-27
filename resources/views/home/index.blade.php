@@ -22,6 +22,8 @@
                     Baca Selengkapnya
                 </a>
             </div>
+
+
             <div class=" md:flex items-center justify-center">
                 <div id="background"
                     class="animate-bounce bg-white w-1/2 md:w-3/4 lg:w-1/2 h-1/2 md:h-3/4 lg:h-1/2 rounded-full">
@@ -29,15 +31,27 @@
                 </div>
 
             </div>
+        </div>
     </main>
 
     <div
-        class="px-36 bg-gradient-to-l from-violet-500 to-violet-900 grid grid-cols-3 justify-start md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 p-4 md:p-0">
+        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-500 to-violet-900 px-4 md:px-10 lg:px-20 xl:px-40">
         <div class="flex flex-col items-start justify-center text-white">
-            <img src="" alt="" class="">
-            <h1>Test</h1>
+            <p class="text-xl font-bold md:text-8xl lg:text-10xl">About</p>
+            <h1 class="text-6xl font-bold md:text-6xl lg:text-8xl">TOPSIS</h1>
+            <p class="mt-2 md:mt-6 lg:mt-12">
+                Topsis adalah sebuah sistem penunjang keputusan yang digunakan untuk membantu pengambilan keputusan
+                dalam memilih alternatif terbaik.
+
+                Topsis menggunakan kriteria untuk mengukur kemiripan antara alternatif yang dipilih dengan
+                alternatif lainnya. <br class="">
+
+                Topsis juga menggunakan bobot untuk mengukur bobot dari setiap kriteria.
+            </p>
+            <a href="{{ route('login') }}">Mulai</a>
         </div>
     </div>
+
 
 
 
