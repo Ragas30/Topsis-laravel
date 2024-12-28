@@ -12,14 +12,13 @@
 <body class="bg-violet-900">
     <div class=" min-h-screen flex justify-center items-center">
         <div class="flex flex-col bg-violet-500 p-8 rounded-lg shadow-2xl">
-            <form action="" method="POST" class="space-y-6">
-
+            <form action="{{ route('login') }}" method="POST" class="space-y-6">
+                @csrf
                 <div class="mt-4">
-                    <label for="username" class="block text-white font-semibold">Username</label>
-                    <input type="text" name="username" id="username"
+                    <label for="email" class="block text-white font-semibold">Email</label>
+                    <input type="email" name="email" id="username"
                         class="w-full p-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF2D20]"
                         required>
-
                 </div>
                 <div class="mt-4">
                     <label for="password" class="block text-white font-semibold">Password</label>

@@ -1,8 +1,8 @@
-<nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-5 z-50 fixed top-0 left-0 w-full">
+<nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-5 z-50 fixed top-0 w-full">
     <div class="flex items-center justify-between">
 
         <div class="flex items-center gap-2">
-            <h1 class="font-bold text-2xl">SPK</h1>
+            <a href="{{ route('home') }}" class="font-bold text-3xl text-white">SPK</a>
         </div>
 
 

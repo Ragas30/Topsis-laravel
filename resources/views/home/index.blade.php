@@ -4,7 +4,7 @@
 
 
     <main
-        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-500 to-violet-900 px-4 md:px-10 lg:px-20 xl:px-40">
+        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-900 via-slate-800 to-black px-4 md:px-10 lg:px-20 xl:px-40">
 
         <div class="grid grid-cols-1 justify-start md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 p-4 md:p-0">
             <div class="flex flex-col items-start justify-center text-white">
@@ -35,7 +35,7 @@
     </main>
 
     <div
-        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-500 to-violet-900 px-4 md:px-10 lg:px-20 xl:px-40">
+        class="flex flex-row items-center justify-center h-screen bg-gradient-to-r from-violet-900 via-slate-900 to-black px-4 md:px-10 lg:px-20 xl:px-40">
         <div class="flex flex-col items-start justify-center text-white">
             <p class="text-xl font-bold md:text-8xl lg:text-10xl">About</p>
             <h1 class="text-6xl font-bold md:text-6xl lg:text-8xl">TOPSIS</h1>

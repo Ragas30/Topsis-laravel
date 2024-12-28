@@ -2,15 +2,18 @@
 
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\auth\AuthController;
+use App\Http\Controllers\home\homeController;
 use App\Http\Controllers\auth\loginController;
 use App\Http\Controllers\kriteria\kriteriaController;
 use App\Http\Controllers\dashboard\dashboardController;
-use App\Http\Controllers\home\homeController;
 
 //home
 route::get('/', [homeController::class, 'index'])->name('home');
 
-route::get('/login', [loginController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login')->middleware('guest');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 //kriteria
