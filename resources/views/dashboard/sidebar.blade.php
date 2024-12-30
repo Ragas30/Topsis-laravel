@@ -13,6 +13,6 @@
             <a href="{{ route('kriteria') }}" class="block py-2 px-4 rounded-md text-white hover:bg-violet-600">Input
                 Kriteria</a>
         </div>
-        <a href="{{ route('login') }}" class="block py-2 px-4 rounded-md text-white hover:bg-violet-600">logout</a>
+        <a href="{{ route('logout') }}" class="block py-2 px-4 rounded-md text-white hover:bg-violet-600">logout</a>
     </nav>
 </aside>

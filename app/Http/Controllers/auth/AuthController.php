@@ -4,6 +4,7 @@ namespace App\Http\Controllers\auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
@@ -15,16 +16,15 @@ class AuthController extends Controller
     }
 
     // Proses login
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+        if ($request->validated()) {
+            if (Auth::guard('admin')->attempt([
+                'email' => $request->email,
+                'password' => $request->password,
+            ])) {
+                return redirect('/dashboard');
+            }
         }
 
         return back()->withErrors([
@@ -38,7 +38,6 @@ class AuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-
         return redirect('/login');
     }
 }

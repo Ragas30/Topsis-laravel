@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class kriteria extends Model
+class Kriteria extends Model
 {
     return $this->hasMany(Nilai::class);
 }
